@@ -1,84 +1,92 @@
-    body {
-        color: ghostwhite;
-    }
-    
-    .album-art {
-        height: 100px;
-        width: 100px;
-    }
-    
-    .nav-bar {
-        width: 30%;
-        padding: 10px 0 10px 0;
-    }
-    
-    .card-title {
-        font-size: x-small;
-        font-weight: bold;
-    }
-    
-    .card-info {
-        font-size: xx-small;
-    }
-    
-    .search-input {
-        width: 100%;
-    }
-    
-    .section {
-        padding-bottom: 0.5em;
-    }
-    
-    .title-text {
-        margin-bottom: 1em;
-        margin-top: 0;
-        padding-top: 0;
-    }
-    
-    .recently-searched {
-        margin-left: 2em;
-        margin-top: 3em;
-    }
-    
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        font-family: 'Dancing Script', cursive;
-    }
-    
-    h1 {
-        font-size: 80px;
-    }
-    
-    h3 {
-        font-size: 50px;
-    }
-    
-    h4 {
-        font-size: 40px;
-    }
-    
-    .main-container {
-        margin-top: 0;
-    }
-    
-    .trending-singles-container {
-        padding-bottom: 2em;
-    }
-    
-    .column {
-        padding-bottom: 1.5em;
-    }
-    
-    .modal-card-title {
-        color: ghostwhite;
-    }
-    
-    @media only screen and (max-width: 786px) {
-        .recently-searched {
-            margin-left: 0em;
-        }
-    }
+:root {
+    --bg: #071e36;
+    --card-bg: #041221;
+    --modal-bg: #1f73ce;
+    --modal-card-bg: #15569b;
+}
+
+body {
+    background: var(--bg);
+}
+
+.box {
+    background: var(--card-bg);
+}
+
+input::placeholder {
+    color: antiquewhite;
+}
+
+.navbar {
+    background: var(--card-bg);
+}
+
+.navbar-item {
+    color: ghostwhite;
+}
+
+
+/* Card start*/
+
+.card {
+    overflow: hidden;
+    background: ghostwhite;
+    color: var(--bg);
+}
+
+.card.large {
+    border-radius: 5px;
+}
+
+.title.no-padding {
+    margin-bottom: 0 !important;
+}
+
+.footer {
+    background: var(--card-bg);
+    color: ghostwhite;
+}
+
+.footer p,
+strong {
+    color: ghostwhite
+}
+
+.footer a:hover {
+    color: crimson;
+}
+
+.fa {
+    color: ghostwhite;
+    margin: 10px
+}
+
+.recent-searches {
+    width: 100%;
+}
+
+.modal-card-head,
+.modal-card-foot {
+    background-color: var(--modal-card-bg);
+    border: 0;
+}
+
+.modal-card-body {
+    background-color: var(--modal-bg);
+}
+
+.modal-image {
+    width: 80%;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--modal-bg);
+}
+
+::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.3);
+}
