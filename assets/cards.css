@@ -4,7 +4,7 @@
 }
 
 body {
-    background: var(--bg);
+    background-color: #90F1F4;
 }
 
 .box {
@@ -12,11 +12,11 @@ body {
 }
 
 input::placeholder {
-    color: antiquewhite;
+    color: rgb(250, 142, 0);
 }
 
 .navbar {
-    background: var(--card-bg);
+    background-color: #dd4019;
 }
 
 .navbar-item {
